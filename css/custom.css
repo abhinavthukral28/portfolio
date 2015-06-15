@@ -1,0 +1,36 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #747704
+}
+
+.super-title {
+    font-size: 60px;
+}
+
+.logo {
+    margin-top: 20px;
+}
+
+.text-muted {
+    color: #BCBBBB
+}
+
+.text-thin {
+    font-weight: 100;
+}
+
+.sm-align {
+    text-align: right;
+}
+
+@media screen and (max-width: 767px) {
+    .sm-align {
+        text-align: center;
+    }
+
+    body {
+        text-align: center;
+    }
+
+}
