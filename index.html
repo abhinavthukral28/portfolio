@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/bootstrap-theme.css"/>
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/custom.css"/>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
 <body>
 <div class="container">
@@ -44,22 +46,24 @@
     </div>
 
     <div class="row text-center">
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-            <img src="images/project1.jpg" class="img-responsive center-block" alt="Project 1">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4" data-toggle="modal" data-target="#project1">
+            <a href="#"><img src="images/project1.jpg" class="img-responsive center-block" alt="Project 1"></a>
 
             <h3 class="text-uppercase">Homey</h3>
 
             <p>https://github.com/abhinavthukral28/Homey</p>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-            <img src="images/project2.jpg" class="img-responsive center-block" alt="Project 2">
+            <a href="#"><img src="images/project2.jpg" class="img-responsive center-block" alt="Project 2"
+                             data-toggle="modal" data-target="#project2"></a>
 
             <h3 class="text-uppercase">carleton robotics</h3>
 
             <p>carletonrobotics.com</p>
         </div>
         <div class="col-xs-12 col-xs-offset- col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0 col-lg-4 col-lg-offset-0">
-            <img src="images/project3.jpg" class="img-responsive center-block" alt="Project 3">
+            <a href="#"><img src="images/project3.jpg" class="img-responsive center-block" alt="Project 3"
+                             data-toggle="modal" data-target="#project3"></a>
 
             <h3 class="text-uppercase">Bright Land School</h3>
 
@@ -67,6 +71,73 @@
         </div>
     </div>
 
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Homey</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                            <img class="img-responsive center-block" src="images/project1.jpg"><br>
+                            Homey is a low cost home automation and security system for the developing world. It has
+                            been built using the Intel Edison Board
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel2">Carleton Robotics</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                            <img class="img-responsive center-block" src="images/project2.jpg"><br>
+                            CarletonRobotics.com was built using the bootstrap theme for wordpress
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel3">Bright Land School</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                            <img class="img-responsive center-block" src="images/project3.jpg"><br>
+                            BrightLandEducation.net was built using a premium wordpress theme
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
+
 </body>
 </html>
